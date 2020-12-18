@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Understanding Shapes - Math Mela</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<div id="welcome">
+		<img src="polygon.png" alt="Logo" style="margin-left: auto; margin-right: auto; display: block;">
+		<div id="title" style="color: aquamarine">
+			<h1>Welcome to Math-Mela</h1>
+			<h3 style="text-align: center;">Understanding Shapes (7A) quiz</h3>
+		</div>
+
+		<br><br><br><br><br><br>
+
+		<table style="margin-left: auto; margin-right: auto;">
+			<tr>
+				<td>
+					<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+					<div class="form__group">
+					  <input type="text" class="form__input" id="name" placeholder="Enter your name" required="" />
+					  <label for="name" class="form__label" style="color: #94b2e1">Name</label>
+					</div>
+				</td>
+				<td>
+					<button id="startQuiz" onclick="startQuiz()">Start Quiz</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<br>
+					<p id="errormsg" style="color: red; text-align: center;"></p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="hello" style="display: none">
+		<label id="username" style="color: white"></label>
+	</div>
+	<br>
+    <div id="grid" style="display: none">
+        <div id="quiz">
+
+            <h1>Quiz</h1>
+            <hr style="margin-bottom: 20px">
+
+            <p id="question"></p>
+
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+
+            <hr style="margin-top: 30px">
+
+            <footer>
+            	<table>
+            		<tr>
+            			<td style="width: 400px">
+            				<p id="progress">Question x of y</p>
+            			</td>
+            			<td>
+            				<p id="timer" style="font-size: 18px">Time Remaining: <span id="time"></span><p>
+            			</td>
+            		</tr>
+            	</table>
+            </footer>
+        </div>
+    </div>
+
+<script src="question.js"></script>
+<script src="quiz.js"></script>
+<script src="scripts.js"></script>
+
+</body>
+</html>
